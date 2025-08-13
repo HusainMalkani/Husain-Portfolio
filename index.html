@@ -1,124 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Husain Malkani | Embedded Engineer</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Husain - Embedded Engineer</title>
 <style>
-* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
-body { color: #333; background: #f9f9f9; }
-header { background: linear-gradient(120deg, #0d1b2a, #1b263b); color: #fff; text-align: center; padding: 2rem 1rem; position: sticky; top: 0; z-index: 1000; }
-header h1 { font-size: 2.5rem; animation: fadeInDown 0.8s ease-out; }
-header p { font-size: 1.1rem; margin-top: .5rem; animation: fadeInUp 0.8s ease-out; }
-nav { margin-top: 1rem; }
-nav a { color: #fff; margin: 0 15px; text-decoration: none; font-weight: 500; position: relative; padding-bottom: 4px; }
-nav a::after { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 2px; background: #e0e1dd; transition: width 0.3s; }
-nav a:hover::after, nav a.active::after { width: 100%; }
-section { padding: 3rem 1rem; max-width: 1000px; margin: auto; opacity: 0; transform: translateY(20px); transition: all 0.6s ease-in-out; }
-section.visible { opacity: 1; transform: translateY(0); }
-h2 { color: #1b263b; margin-bottom: 1.5rem; border-left: 4px solid #415a77; padding-left: 8px; }
-ul { list-style: none; display: flex; flex-wrap: wrap; gap: 10px; }
-ul li { background: #e0e1dd; padding: .5rem 1rem; border-radius: 20px; transition: transform 0.3s, background 0.3s; }
-ul li:hover { background: #778da9; color: #fff; transform: scale(1.05); }
-footer { background: #1b263b; color: #fff; text-align: center; padding: 1rem; margin-top: 2rem; }
-h3 { color: #415a77; margin-top: 1rem; }
-a { color: #0d1b2a; }
-a:hover { color: #415a77; }
-.project-card { background: #fff; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); padding: 1rem; margin-bottom: 1rem; transition: transform 0.3s; }
-.project-card:hover { transform: translateY(-5px); }
-@keyframes fadeInDown { from { opacity: 0; transform: translateY(-20px);} to {opacity: 1; transform: translateY(0);} }
-@keyframes fadeInUp { from { opacity: 0; transform: translateY(20px);} to {opacity: 1; transform: translateY(0);} }
-@media(max-width: 768px){ nav { display: flex; flex-wrap: wrap; justify-content: center; } }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; color: #333; }
+    header { background: #222; color: white; padding: 2rem; text-align: center; }
+    nav a { color: white; margin: 0 10px; text-decoration: none; }
+    section { padding: 3rem max(5%, 20px); }
+    h2 { border-bottom: 2px solid #ddd; padding-bottom: .5rem; }
+    .skills span { display: inline-block; background: #007acc; color: white; padding: 5px 10px; border-radius: 15px; margin: 5px; font-size: 0.9rem; }
+    .experience { border-left: 3px solid #007acc; padding-left: 1rem; margin-top: 1rem; }
+    .job { margin-bottom: 2rem; }
+    .job h3 { margin: 0; }
+    footer { background: #222; color: white; text-align: center; padding: 1rem; }
+    a.btn { background: #007acc; padding: 10px 20px; color: white; border-radius: 5px; text-decoration: none; }
 </style>
 </head>
 <body>
 
 <header>
-  <h1>Husain Malkani</h1>
-  <p>Embedded Firmware Engineer | IoT & Smart Metering Specialist</p>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#experience">Experience</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
+    <h1>Husain</h1>
+    <p>Embedded Engineer | Firmware Specialist | Smart Metering Expert</p>
+    <nav>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+    </nav>
 </header>
 
-<section id="about">
-  <h2>About Me</h2>
-  <p>Expert Embedded Engineer with proven success in smart metering and IoT, driving projects from concept to deployment. Skilled in firmware optimization, compliance testing, and advanced data logging. Experienced in leading utility qualification testing for Kahramaa Qatar, leveraging strong communication protocol knowledge to exceed operational standards.</p>
+<section id="profile">
+    <h2>Profile</h2>
+    <p>Expert Firmware Engineer with experience in smart metering technology, from domestic and bulk water meters to electricity meters and advanced data loggers. Skilled in firmware optimization, validation, and ensuring compliance with utility standards like Kahramaa Qatar.</p>
 </section>
 
-<section id="skills">
-  <h2>Skills</h2>
-  <ul>
-    <li>C / Embedded C</li>
-    <li>Python (Automation Scripts)</li>
-    <li>SPI, I2C, UART, CAN</li>
-    <li>MQTT, SFTP, HTTP/HTTPS</li>
-    <li>RS485, DLMS</li>
-    <li>Testing & Debugging</li>
-    <li>STM32CubeIDE</li>
-    <li>Project Management</li>
-    <li>Utility Standards Compliance</li>
-  </ul>
+<section id="skills" class="skills">
+    <h2>Key Skills</h2>
+    <span>C Language</span><span>Embedded C</span><span>Python</span><span>Communication Protocols</span><span>Testing & Debugging</span><span>Documentation</span><span>Utility Operations</span>
 </section>
 
 <section id="experience">
-  <h2>Experience</h2>
-  <h3>Krizik Metering Middle East — Embedded Engineer (Jan 2023 – Present)</h3>
-  <p>• Led pre-qualification testing for Kahramaa Qatar’s smart metering projects.<br>
-     • Automated firmware validation using Python scripts.<br>
-     • Optimized energy measurement algorithms and comms stack.<br>
-     • Integrated data logger modules for leakage monitoring & remote diagnostics.<br>
-     • Maintained compliance with global utility standards.</p>
-  
-  <h3>Ascenten Technologies — Embedded Firmware Engineer (Feb 2020 – Jul 2022)</h3>
-  <p>• Implemented core functionalities for smart energy meters.<br>
-     • Developed and optimized low-level code for microcontrollers.<br>
-     • Integrated and tested communication protocols: SPI, I2C, UART, CAN.<br>
-     • Performed functional testing using GuruX Software.<br>
-     • Conducted debugging with oscilloscopes, logic analyzers, and debuggers.</p>
+    <h2>Experience</h2>
+    <div class="experience">
+        <div class="job">
+            <h3>Embedded Engineer – Krizik Metering Middle East (Jan 2023 - Present)</h3>
+            <ul>
+                <li>Led utility pre-qualification testing for Kahramaa Qatar.</li>
+                <li>Automated firmware validation using Python scripts.</li>
+                <li>Optimized firmware for energy measurement accuracy.</li>
+            </ul>
+        </div>
+        <div class="job">
+            <h3>Embedded Firmware Engineer – Ascenten Technologies, India (Feb 2020 – Jul 2022)</h3>
+            <ul>
+                <li>Developed firmware for smart energy meters.</li>
+                <li>Implemented communication protocols (SPI, I2C, UART, CAN).</li>
+                <li>Debugged firmware issues using oscilloscopes and logic analyzers.</li>
+            </ul>
+        </div>
+    </div>
 </section>
 
-<section id="projects">
-  <h2>Projects</h2>
-  <div class="project-card">
-    <h3>Smart Meter Firmware Optimization</h3>
-    <p>Boosted accuracy of energy measurements while ensuring compliance with utility regulations for Qatar’s largest power provider.</p>
-  </div>
-  <div class="project-card">
-    <h3>Automated Firmware Validation</h3>
-    <p>Developed Python-based scripts to automate testing, reducing validation time by 40% and increasing test coverage.</p>
-  </div>
-  <div class="project-card">
-    <h3>Data Logger Integration</h3>
-    <p>Embedded modules for consumption logging, leakage monitoring, and remote diagnostics, enhancing predictive maintenance capabilities.</p>
-  </div>
+<section id="education">
+    <h2>Education</h2>
+    <p>BE in Electronics & Communication – Government Engineering College, Bhavnagar (2017), CGPA 8.07/10</p>
 </section>
 
 <section id="contact">
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:malkanihusain@gmail.com">malkanihusain@gmail.com</a></p>
-  <p>LinkedIn: <a href="https://linkedin.com/in/husain-m-51a633345" target="_blank">linkedin.com/in/husain-m-51a633345</a></p>
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:malkanihusain@gmail.com">malkanihusain@gmail.com</a></p>
+    <p>Phone: +974 5596 3827</p>
+    <p><a class="btn" href="https://www.linkedin.com/in/husain-m-51a633345" target="_blank">LinkedIn</a></p>
 </section>
 
 <footer>
-  <p>© 2025 Husain Malkani</p>
+    <p>© 2025 Husain | Built with HTML & CSS</p>
 </footer>
-
-<script>
-// Intersection Observer for fade-in on scroll
-const sections = document.querySelectorAll('section');
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if(entry.isIntersecting){ entry.target.classList.add('visible'); }
-  });
-}, { threshold: 0.2 });
-sections.forEach(section => observer.observe(section));
-</script>
 
 </body>
 </html>
